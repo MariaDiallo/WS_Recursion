@@ -1,0 +1,18 @@
+ALGORITHM FUNCTION palaindrome(word : char) : char
+VAR
+    car : char;
+    car_d : char;
+    car_f : char;
+    answer_right : STRING := "This word is a palaindrome";
+    answer_wrong : STRING := "This word is not palaindrome";
+BEGIN
+    IF (car = 1) THEN
+        RETURN answer_right;
+    ELSE
+        IF (car_d = car_f) THEN
+            RETURN answer_right;
+        ELSE
+            RETURN answer_wrong
+        END_IF
+    END_IF
+END
